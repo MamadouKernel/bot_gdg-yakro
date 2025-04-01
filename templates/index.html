@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot IA</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">Bot GDG-Yamoussoukro 🤖</div>
+        <div class="chat-box" id="chat-box">
+            <div class="bot-message">Bonjour ! Pose-moi une question.</div>
+        </div>
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="Écris un message..." onkeypress="handleKeyPress(event)">
+            <button id="send-btn">Envoyer</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
